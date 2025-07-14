@@ -1,0 +1,138 @@
+/* Container */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 2rem auto;
+  background-color: #f7f7f7;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+/* Left & Right Columns */
+.signup-left,
+.signup-right {
+  flex: 1;
+  max-width: 50%;
+  height: 100%;
+}
+
+.signup-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f4f4f4;
+}
+
+.signup-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right Form Section */
+.signup-right {
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.signup-right h2 {
+  margin-bottom: 2rem;
+  color: #1e1e2f;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Form Styling */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.signup-form input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.signup-form button {
+  padding: 0.8rem;
+  background-color: #ffb347;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+  background-color: #e09f3e;
+  color: #fff;
+}
+
+.login-link {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.login-link a {
+  color: #1e1e2f;
+  text-decoration: underline;
+}
+
+/* ----------- Responsive Design ----------- */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    width: 90%;
+    margin: 1.5rem auto;
+  }
+
+  .signup-left,
+  .signup-right {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .signup-right {
+    padding: 2rem;
+  }
+
+  .signup-image {
+    height: 250px;
+    object-fit: cover;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .signup-right {
+    padding: 1.5rem;
+  }
+
+  .signup-right h2 {
+    font-size: 1.5rem;
+  }
+
+  .signup-form input,
+  .signup-form button {
+    font-size: 0.95rem;
+    padding: 0.7rem;
+  }
+
+  .login-link {
+    font-size: 0.85rem;
+  }
+}
