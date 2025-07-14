@@ -34,10 +34,5 @@ A full-featured **Blog Application** built using the **MERN Stack** (MongoDB, Ex
 
 ---
 
-## 🛠️ Installation & Setup
-
-### 📦 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/azad-blog-app.git
-cd azad-blog-app
+## npm i
+## npm start
